@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Counter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center; 
+            padding: 20px; 
+            background-color: #0bebdc; /* Fixed the background color */
+        }
+        h1 {
+            color: black;
+            font-size:30px;
+        }
+        button {
+            font-size: 20px; 
+            padding: 10px 20px; 
+            cursor: pointer; 
+            background-color: #4CAF50; 
+            color: white; 
+            border: none; 
+            border-radius: 5px; 
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Click Counter</h1>
+    <p><b>Click the button to increase the count!</b></p>
+    <p>Just like a cookie clicker, except there is no cookie and no power-ups!!!!</p>
+    <button onclick="increment()">Click me!</button>
+    <p id="count">0</p>
+
+    <button onclick="handleDontClick()">Don't click me.</button>
+
+    <script>
+        let count = 0;
+        function increment() {
+            count++;
+            document.getElementById("count").textContent = count;
+            }
+  
+
+        function handleDontClick() {
+            if (count > 10) {
+                window.location.href = "https://www.youtube.com/shorts/uf7ys4EHFZ0";
+            }
+        }
+    </script>
+</body>
+</html>
